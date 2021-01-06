@@ -11,12 +11,12 @@ var _bill = irandom(3000) + 123;
 var _fred = irandom(3000) + 231;
 if (argument_count > 1) {
     _seed = argument[1];
-}
-else {
-    _seed = irandom(25600) + 3328;
     if (_seed < 3328) {
         show_debug_message("GMKrypt: The seed is too small, expected <=3328");
     }
+}
+else {
+    _seed = irandom(25600) + 3328;
 }
 
 if (global._buffer_gmkrypt_verbose) {
